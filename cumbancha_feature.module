@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Cumbancha feature feature.
+ */
+
+include_once 'cumbancha_feature.features.inc';
