@@ -1,32 +1,20 @@
 <?php
 /**
  * @file
- * cumbancha_feature.features.menu_custom.inc
+ * cumbancha_extra_menus.features.menu_custom.inc
  */
 
 /**
  * Implements hook_menu_default_menu_custom().
  */
-function cumbancha_feature_menu_default_menu_custom() {
+function cumbancha_extra_menus_menu_default_menu_custom() {
   $menus = array();
 
-  // Exported menu: features.
-  $menus['features'] = array(
-    'menu_name' => 'features',
-    'title' => 'Features',
-    'description' => 'Menu items for any enabled features.',
-  );
   // Exported menu: main-menu.
   $menus['main-menu'] = array(
     'menu_name' => 'main-menu',
     'title' => 'Menú principal',
     'description' => 'El menú <em>Principal</em> se usa en muchos sitios web para mostrar las secciones principales del sitio, generalmente en una barra de navegación superior.',
-  );
-  // Exported menu: management.
-  $menus['management'] = array(
-    'menu_name' => 'management',
-    'title' => 'Management',
-    'description' => 'El menú <em>Administrar</em> contiene enlaces a tareas administrativas.',
   );
   // Exported menu: menu-agrupaciones-artisticas.
   $menus['menu-agrupaciones-artisticas'] = array(
@@ -82,18 +70,14 @@ function cumbancha_feature_menu_default_menu_custom() {
   t('Artistas');
   t('Circuitos');
   t('Circuitos temáticos compuestos por varias actividades afines.');
-  t('El menú <em>Administrar</em> contiene enlaces a tareas administrativas.');
   t('El menú <em>Principal</em> se usa en muchos sitios web para mostrar las secciones principales del sitio, generalmente en una barra de navegación superior.');
   t('El menú <em>Usuario</em> contiene enlaces relacionados con la cuenta del usuario, como el enlace \'Cerrar sesión\'.');
   t('El menú de <em>Navegación</em> contiene enlaces para los visitantes al sitio. Algunos módulos agregan enlaces al menú de <em>Navegación</em> automáticamente.');
   t('Establecimientos');
   t('Eventos');
   t('Eventos y presentaciones habituales.');
-  t('Features');
   t('Grupos de personas que practican una manifestación cultural de manera profesional.');
   t('Lugares donde asistir');
-  t('Management');
-  t('Menu items for any enabled features.');
   t('Menú principal');
   t('Moderador');
   t('Navegación');
